@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>何食べた？</title>
+</head>
+<body>
+  <div class="table"></div>
+
+  <div id="form" class="form-container">
+    <div class="input-left">
+        <!-- <img src="" id="img-file" alt="" width="300" height="auto"> -->
+      <textarea name="memo" id="memo" class="text-area" cols="40" rows="10"></textarea>
+    </div>
+    <div class="right-input">
+        <!-- <label><div class="img-select">画像を追加</div><input type="file" name="image" id="input-img" accept="*/img"></label> -->
+      <input type="date" name="calendar" id="date" required>
+      <div id="radio">
+        <label><input type="radio" name="radio"  value="morning" id="morning">morning</label>
+        <label><input type="radio" name="radio"  value="lunch" id="lunch">lunch</label>
+        <label><input type="radio" name="radio" value="dinner" id="dinner">dinner</label>
+        <label><input type="radio" name="radio"  value="snack" id="snack">snack</label>
+      </div>
+      <button id="record" class="record-btn">record</button>
+    </div>
+  </div>
+  <div id="list" class="date-list">
+    <!-- <p class="date-text"></p>
+    <div class="meal-list"> -->
+      <!-- <img src="" id="meal-img"alt="食事の写真"> -->
+      <!-- <div class="memo-content">テスト
+      </div> -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
